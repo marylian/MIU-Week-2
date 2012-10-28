@@ -9,7 +9,7 @@
 			<!--Meta Content-->
 			<meta charset="UTF-8" />
 			<meta name="keywords" content="html5, mobile development, Full Sail University, Teacher, Plans" />
-			<meta name="description" content= "My first assignment for VFW" />
+			<meta name="description" content="My first assignment for VFW" />
 	   		<meta name="robots" content="index, follow" />
 	   		<meta name="viewport" content="user-scalable=no, width=device-width" />
 	    	<meta name="HandheldFriendly" content="True" />
@@ -25,14 +25,15 @@
 		<form action="#" method="post" id="taskForm"> 
 			<fieldset>
 				<legend>Add a Task</legend>
-				<ul	id = "errors"></ul>
-				<ul id = "questions">
+				<ul	id="errors"></ul>
+				<ul id="questions"></ul>
 					<li>Please Choose a Day:
-							<li><input	name= "weekday" type="checkbox" value= "Monday" id="monday"/><label for="monday">Monday</label></li>
-							<li><input	name= "weekday" type="checkbox" value= "Tuesday" id="tuesday"/><label for="tuesday">Tuesday</label></li>
-							<li><input	name= "weekday" type="checkbox" value= "Wednesday" id="wednesday"/><label for="wednesday">Wednesday</label></li>
-							<li><input	name= "weekday" type="checkbox" value= "Thursday" id="thursday"/><label for="thursday">Thursday</label></li>
-							<li><input	name= "weekday" type="checkbox" value= "Friday" id="friday"/><label for="friday">Friday</label></li>
+						<ul>
+							<li><input	name="weekday" type="checkbox" value="Monday" id="monday"/><label for="monday">Monday</label></li>
+							<li><input	name="weekday" type="checkbox" value="Tuesday" id="tuesday"/><label for="tuesday">Tuesday</label></li>
+							<li><input	name="weekday" type="checkbox" value="Wednesday" id="wednesday"/><label for="wednesday">Wednesday</label></li>
+							<li><input	name="weekday" type="checkbox" value="Thursday" id="thursday"/><label for="thursday">Thursday</label></li>
+							<li><input	name="weekday" type="checkbox" value="Friday" id="friday"/><label for="friday">Friday</label></li>
 						</ul>
 					</li>
 					<li><label for="sub">Subject: </label><input type="text" id="sub"/></li>
@@ -60,7 +61,6 @@
 					<li>
 						<label for="comments"> My Notes: </label><textarea id="comments">Type notes here.</textarea>
 					</li>
-				</ul>
 			</fieldset>
 			<input type="button" id="taskSubmit" value="Submit my task!"/>	
 		</form>
