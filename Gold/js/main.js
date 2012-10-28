@@ -28,17 +28,24 @@ window.addEventListener("DOMContentLoaded", function(){
 		 selectLi.appendChild(makeSelect);
 	}
 	var dayValue=[];
-	//Find the value of selected checkboxes
+	//Find the value of selected radio button.
 	
 	function getSelectedCheckbox(){
-		var checkbox=document.forms[0].weekday;
+		var radiobutton=document.getElementsByName("weekday");
+		for (var i=0; i<radiobutton.length; i++){
+			if(radiobutton[i].checked==true){
+				dayValue=radiobutton[i].value;
+			}
+		}
+		/*var checkbox=document.forms[0].weekday;
 		for(var i=0; i<checkbox.length; i++){
 			if(checkbox[i].checked){
 			dayValue.push(checkbox[i].value);
 			}
-		}
+		}*/
 	}
-
+var x=document.getElementsByName("x");
+//alert(x.length);
 	function toggleControls(m){
 		switch(m){
 			case "on":
@@ -56,10 +63,9 @@ window.addEventListener("DOMContentLoaded", function(){
 				break;
 			default:
 				return false;
-
-
 		}
-	} 
+	}
+	
 	function storeData(key){
 		//If there is no key this means this is a brand new item an we need a new key
 		if(!key){
@@ -72,6 +78,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 		//Gather up all our form field values and store in an object.
 		//Object properties contain array with the form label and input value.
+		deleteDuplicateRec(key);
 		getSelectedCheckbox();
 		var item				={};
 			item.checkbox     	=["Choose a day:", dayValue];
@@ -195,6 +202,16 @@ function getData(){
 		editSubmit.key=this.key;
 	}
 	
+	function deleteDuplicateRec(){
+		//var ask=confirm("Are you sure you want to delete this task?");
+		//if(ask){
+			localStorage.removeItem(this.key);
+			//alert("Contact was deleted!");
+			window.location.reload();
+		//}else{
+			//alert("Task was NOT deleted.");
+		//}
+	}
 	function deleteItem(){
 		var ask=confirm("Are you sure you want to delete this task?");
 		if(ask){
@@ -218,7 +235,7 @@ function getData(){
 			return false;
 		}
 	}
-	function validate(key){
+	function validate(e){
 		//Define the elements we want to check
 		var getSub=$('sub');
 		var getPeriod=$('period');
