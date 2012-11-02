@@ -1,7 +1,7 @@
 <!doctype html>  
 <!--Marylia Nieves
 	MIU 1211
-	Project 1-->
+	Project 2-->
 
 <html lang="en">
 <head>
@@ -37,34 +37,40 @@
 		
 		<!--Browse Categories-->
 				<li data-role="list-divider">Browse Categories</li>
-				<!--<li><a href="#grade" data-theme="e">-->
-				<li><a href="error.html" data-theme="e"  data-ajax="false">
+				<li><a href="#grade" data-theme="e">
+					<img src="images/ID-10094072.gif">
+				<!--<li><a href="error.html" data-theme="e"  data-ajax="false"> -->
 						<h3>Grade Papers</h3>
 						<p>Check for student understanding.</p>
 				</a></li>
 				<!-- <li><a href="#contact" data-theme="e"> -->
 				<li><a href="error.html" data-theme="e" data-ajax="false" data-add-back-btn="true">
+					<img src="images/ID-10060589.gif">
 						<h3>Contact Parents</h3>
 						<p>Discuss upcoming events, questions and student progress.</p>
 				</a></li>
 				<!-- <li><a href="#meetings" data-theme="e"> -->
 				<li><a href="error.html" data-theme="e" data-ajax="false">
+					<img src="images/ID-10081695.gif">
 						<h3>Attend Meetings</h3>
 						<p>Keep track of all the meetings you need to attend.</p>
 				</a></li>
 				<!-- <li><a href="#write" data-theme="e"> -->
 				<li><a href="error.html" data-theme="e" data-ajax="false">
+					<img src="images/ID-10040554.gif">
 						<h3>Write Lesson Plans</h3>
 						<p>Write your lesson plans or jot down ideas for lessons.</p>
 				</a></li>
 				<li data-role="list-divider">Let's get creative</li>
 				<!-- <li><a href="#test" data-theme="e"> -->
 				<li><a href="error.html" data-theme="e" data-ajax="false">
+					<img src="images/ID-10082342.gif">
 						<h3>Create a Test</h3>
 						<p>Create assessments or worksheets.</p>
 				</a></li>
 				<!-- <li><a href="#project" data-theme="e"> -->
 				<li><a href="error.html" data-theme="e" data-ajax="false">
+					<img src="images/ID-10062043.gif">
 						<h3>Create a Project</h3>
 						<p>Implement project ideas for students.</p>
 				</a></li>
@@ -76,9 +82,9 @@
 			<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#bronze" data-icon="star">Bronze App</a></li>
-						<li><a href="#ghpages" data-icon="check">gh-Pages</a></li>
-						<li><a href="#addatask" data-icon="plus">Add a Task</a></li>
+						<li><a href="../Bronze/index.html" data-ajax="false" data-icon="star">Bronze App</a></li>
+						<li><a href="about.html" data-ajax="false" data-icon="check">About Page</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a Task</a></li>
 					</ul>
 				</div>
 			</div>
@@ -86,31 +92,75 @@
 
 		
 		
-		<!--<div data-role="page" id="grade" data-add-back-btn="true" data-theme="e">
+		<div data-role="page" id="grade" data-add-back-btn="true" data-theme="e">
 			<div data-role="header" data-position="fixed">
 				<h1>Grade Papers</h1>
 			</div>
 			<div data-role="content">
-				<ul data-role="listview">
-					<li>
-						<img src="images/grading_papers.jpeg"/>
-						<h3>Grade Papers</h3>
-						<p>Time to check how much the students learned!</p>
-					</li>
-					<li>Contact Parents</li>
-					<li>Attend Meetings</li>
-					<li>Write Lesson Plans</li>
-					<li>Create a Test</li>
-					<li>Create a Project</li>
-				</ul
-			</div>-->
+				<!-- data-role="listview"> -->
+				<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h3>Subjects</h3>
+						<p>
+							<ul>
+								<li>Language Arts</li>
+								<li>Math</li>
+								<li>Reading</li>
+								<li>Science</li>
+								<li>Social Studies</li>	
+							</ul>
+						</p>
+					</div>
+						<div data-role="collapsible">
+						<h3>Assignments</h3>
+						<p>
+							<ul>
+								<li>Homework</li>
+								<li>Classwork</li>
+								<li>Test</li>
+								<li>Quiz</li>
+							</ul>
+						</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Level</h3>
+						<p>
+							<ul>
+								<li>Above Grade</li>
+								<li> On Grade Level</li>
+								<li>Below Grade Level</li>
+							</ul>
+						</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Effort</h3>
+						<p>
+							<ul>
+								<li>Satisfactory</li>
+								<li>Needs Improvement</li>
+								<li>Unsatisfactory</li>
+							</ul>
+						</p>
+					</div>
+						<div data-role="collapsible">
+						<h3>Working Habits</h3>
+						<p>
+							<ul>
+								<li>Works Independently</li>
+								<li>Needs Teacher Guidance-Occasionally</li>
+								<li>Needs Teacher Guidance-Constrantly</li>
+							</ul>
+						</p>
+					</div>
+					
+				
 			<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#bronze" data-icon="star">Bronze App</a></li>
-						<li><a href="#ghpages" data-icon="check">gh-Pages</a></li>
-						<li><a href="#addatask" data-icon="plus">Add a Task</a></li>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="../Bronze/index.html" data-ajax="false" data-icon="star">Bronze App</a></li>
+						<li><a href="about.html" data-ajax="false" data-icon="check">About Page</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a Task</a></li>
 					</ul>
 				</div>
 			</div>
